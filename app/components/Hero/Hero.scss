@@ -284,6 +284,75 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .hero__overlay {
+    max-width: 1000px;
+    gap: 8px;
+    margin-top: 40px;
+  }
+
+  .hero__grid {
+    gap: 8px;
+  }
+  .hero__title {
+    font-size: 28px;
+  }
+  .hero__desc {
+    font-size: 16px;
+  }
+  .hero__input {
+    height: 52px;
+  }
+  .hero__cta {
+    height: 48px;
+    padding: 0 18px;
+  }
+  .hero__cardTitle {
+    font-size: 14px;
+  }
+  .hero__cell{
+    font-size: 14px;
+  }
+  .hero__card--tilt-top::before {
+    display: none;
+  }
+  .hero__card--tilt-bottom {
+    border-bottom: 1px solid #5f3269 !important;
+  }
+  .hero__card--tilt-top {
+    border-top: 1px solid #5f3269 !important;
+  }
+}
+
+@media (max-width: 820px) {
+  .hero__overlay {
+    padding: 24px 12px;
+    top: 100%;
+  }
+  .hero__input {
+    height: 56px;
+  }
+  .hero__cta {
+    height: 48px;
+    padding: 0 14px;
+    right: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__overlay {
+    padding: 24px 12px;
+    top: 200%;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero__overlay {
+    padding: 24px 12px;
+    top: 240%;
+  }
+}
+
 /* Tilted borders for specific cards */
 .hero__card--tilt-bottom {
   position: relative;

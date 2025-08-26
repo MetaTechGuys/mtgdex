@@ -186,16 +186,6 @@ export default function Hero() {
                   </div>
                   <div className="hero__cell hero__cell--price">$6.30</div>
                 </div>
-                <div className="hero__row">
-                  <div className="hero__cell hero__cell--asset">
-                    <span
-                      className="hero__logo hero__logo--avax"
-                      aria-hidden="true"
-                    />{" "}
-                    AVAX
-                  </div>
-                  <div className="hero__cell hero__cell--price">$39.80</div>
-                </div>
               </div>
               <Link href="/explore/top" className="hero__cardLink">
                 See all movers →
