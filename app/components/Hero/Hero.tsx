@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="hero">
       <video
         className="hero__video"
-        style={{ filter: "invert(1)" }}
+        style={{ filter: "invert(1) hue-rotate(270deg)" }}
         autoPlay
         muted
         loop
