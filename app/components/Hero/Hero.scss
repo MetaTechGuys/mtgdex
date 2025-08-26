@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   color: #000;
-  max-height: 88vh;
+  max-height: 80vh;
 }
 
 .hero__video {
@@ -10,6 +10,7 @@
   width: 100%;
   height: auto;
   object-fit: contain;
+  margin-top: 4%;
 }
 
 .hero__overlay {
@@ -54,7 +55,8 @@
   padding-right: 80px;
   border: 1px solid #5f3269;
   border-radius: 8px;
-  background: #ffffffcc;
+  background: rgba(255, 255, 255, 0.68);
+  backdrop-filter: blur(28px);
 }
 
 .hero__cta {
@@ -90,7 +92,7 @@
   gap: 14px;
 }
 .hero__authLogos .icon-btn[aria-label="Gmail"] {
-  border: 1px solid #d8d8d8;
+  border: 2px solid #d8d8d8;
   color: #ea4335;
   width: 60px;
   height: 60px;
@@ -98,7 +100,7 @@
   border-radius: 8px;
 }
 .hero__authLogos .icon-btn[aria-label="Apple"] {
-  border: 1px solid #d8d8d8;
+  border: 2px solid #d8d8d8;
   color: #000000;
   width: 60px;
   height: 60px;
@@ -106,15 +108,19 @@
   border-radius: 8px;
 }
 .hero__authLogos .icon-btn[aria-label="Telegram"] {
-  border: 1px solid #d8d8d8;
+  border: 2px solid #d8d8d8;
   color: #229ed9;
   width: 60px;
   height: 60px;
   padding: 8px;
   border-radius: 8px;
 }
-.hero__authLogos .icon-btn:hover {
-  background: rgba(0, 0, 0, 0.04);
+.hero__authLogos .icon-btn:hover,
+.hero__authLogos .icon-btn[aria-label="Apple"]:hover,
+.hero__authLogos .icon-btn[aria-label="Gmail"]:hover,
+.hero__authLogos .icon-btn[aria-label="Telegram"]:hover,
+.hero__download:hover {
+  border-color: rgba(0, 0, 0, 0.44);
 }
 .hero__authNote {
   font-size: 14px;
@@ -126,7 +132,7 @@
   padding: 8px;
   border-radius: 8px;
   color: #000;
-  border: 1px solid #d8d8d8;
+  border: 2px solid #d8d8d8;
 }
 
 .hero__right {
