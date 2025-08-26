@@ -1,0 +1,160 @@
+.dual {
+  padding: 0px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dual__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 0px solid #5f3269;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dual__tab {
+  padding: 16px 0px;
+  margin: 0 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.88);
+  transition: all 0.1s ease;
+  min-width: 160px;
+  z-index: 80;
+  margin-bottom: 80px;
+}
+
+.dual__tab:hover {
+  background: rgba(95, 50, 105, 0.1);
+}
+
+.dual__tab--active {
+  border-bottom: 4px solid #5f3269;
+  //   color: white;
+}
+
+.dual__content {
+  min-height: 400px;
+}
+
+.dual__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.dual__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.dual__main-video {
+  max-width: 44%;
+  height: auto;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.dual__overlay-video {
+  position: absolute;
+  max-width: 44%;
+  height: auto;
+  border-radius: 8px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.dual__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dual__title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #000;
+  margin: 0;
+}
+
+.dual__subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+
+.dual__description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+.dual__cta {
+  width: 40%;
+  height: 48px;
+}
+
+@media (max-width: 1024px) {
+  .dual__layout {
+    gap: 40px;
+  }
+  .dual__main-video {
+    max-width: 48%;
+  }
+  .dual__overlay-video {
+    max-width: 44%;
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .dual {
+    padding: 0 16px;
+  }
+  .dual__layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .dual__image {
+    min-height: 260px;
+  }
+  .dual__main-video {
+    max-width: 70%;
+  }
+  .dual__overlay-video {
+    max-width: 60%;
+    right: -10px;
+  }
+  .dual__cta {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dual__main-video {
+    max-width: 80%;
+  }
+  .dual__overlay-video {
+    max-width: 64%;
+    right: -6px;
+  }
+  .dual__cta {
+    width: 100%;
+  }
+}

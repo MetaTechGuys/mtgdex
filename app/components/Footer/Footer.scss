@@ -1,0 +1,128 @@
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  background: var(--background, #f8f8f8);
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.footer__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+@media (max-width: 1024px) {
+  .footer__inner {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__inner {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__logo-svg {
+  width: 148px;
+  height: 48px;
+}
+
+.footer__motto {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.footer__socials {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  grid-auto-rows: 40px;
+  gap: 4px;
+}
+
+.footer__socials .icon-btn {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__title {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer__links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer__links a {
+  color: rgba(0, 0, 0, 0.48);
+  text-decoration: none;
+}
+
+.footer__links a:hover {
+  color: rgba(0, 0, 0, 0.88);
+}
+
+/* Brand hover colors */
+.footer__socials a[aria-label="Twitter"]:hover {
+  color: #1da1f2;
+  background: #c8c8c8;
+}
+.footer__socials a[aria-label="GitHub"]:hover {
+  color: #ffffff;
+  background: #c8c8c8;
+}
+.footer__socials a[aria-label="Discord"]:hover {
+  color: #5865f2;
+  background: #c8c8c8;
+}
+.footer__socials a[aria-label="YouTube"]:hover {
+  color: #ff0000;
+  background: #c8c8c8;
+}
+.footer__socials a[aria-label="Facebook"]:hover {
+  color: #1877f2;
+  background: #c8c8c8;
+}
+.footer__socials a[aria-label="Instagram"]:hover {
+  color: #e4405f;
+  background: #c8c8c8;
+}
+.footer__socials a[aria-label="Reddit"]:hover {
+  color: #ff4500;
+  background: #c8c8c8;
+}
+.footer__socials a[aria-label="LinkedIn"]:hover {
+  color: #0a66c2;
+  background: #c8c8c8;
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 14px 18px;
+  text-align: center;
+  font-size: 14px;
+}
