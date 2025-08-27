@@ -6,6 +6,9 @@ import Footer from "./components/Footer/Footer";
 export const metadata: Metadata = {
   title: "MTG Dex",
   description: "MTG Dex is a platform for trading Magic: The Gathering cards.",
+  icons: {
+    icon: "/images/tabicon.webp",
+  },
 };
 
 export default function RootLayout({
